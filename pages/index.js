@@ -12,7 +12,7 @@ export default function Home({ formattedDate }) {
 
 export async function getStaticProps() {
   const buildDate = Date.now();
-  const formattedDate = new Intl.DateTimeFormat("en-US", {
+  const formattedDate = new Intl.DateTimeFormat("ko-KR", {
     dateStyle: "long",
     timeStyle: "long",
   }).format(buildDate);
